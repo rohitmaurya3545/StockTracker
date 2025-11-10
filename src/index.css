@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 15% 97%;
+    --foreground: 220 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 12%;
+
+    --primary: 260 85% 55%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 290 75% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 15% 94%;
+    --muted-foreground: 220 15% 42%;
+
+    --accent: 340 90% 62%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 150 70% 52%;
+    --success-foreground: 0 0% 100%;
+    
+    --danger: 0 85% 62%;
+    --danger-foreground: 0 0% 100%;
+
+    --destructive: 0 85% 62%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 18% 88%;
+    --input: 220 18% 88%;
+    --ring: 260 85% 55%;
+
+    --radius: 0.75rem;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(260, 85%, 55%), hsl(290, 75%, 60%));
+    --gradient-success: linear-gradient(135deg, hsl(150, 70%, 52%), hsl(170, 75%, 48%));
+    --gradient-danger: linear-gradient(135deg, hsl(0, 85%, 62%), hsl(20, 90%, 58%));
+    --gradient-card: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(220, 20%, 98%));
+    --gradient-footer: linear-gradient(135deg, hsl(260, 85%, 55%), hsl(290, 75%, 60%), hsl(340, 90%, 62%));
+    
+    --shadow-card: 0 2px 8px -2px hsl(220, 25%, 12%, 0.08);
+    --shadow-hover: 0 8px 24px -4px hsl(220, 25%, 12%, 0.12);
+  }
+
+  .dark {
+    --background: 230 25% 8%;
+    --foreground: 220 20% 95%;
+
+    --card: 230 20% 12%;
+    --card-foreground: 220 20% 95%;
+
+    --popover: 230 20% 12%;
+    --popover-foreground: 220 20% 95%;
+
+    --primary: 260 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 290 75% 68%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 230 15% 18%;
+    --muted-foreground: 220 15% 65%;
+
+    --accent: 340 90% 68%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 150 70% 58%;
+    --success-foreground: 0 0% 100%;
+    
+    --danger: 0 85% 68%;
+    --danger-foreground: 0 0% 100%;
+
+    --destructive: 0 85% 68%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 15% 22%;
+    --input: 230 15% 22%;
+    --ring: 260 85% 65%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(260, 85%, 65%), hsl(290, 75%, 68%));
+    --gradient-success: linear-gradient(135deg, hsl(150, 70%, 58%), hsl(170, 75%, 55%));
+    --gradient-danger: linear-gradient(135deg, hsl(0, 85%, 68%), hsl(20, 90%, 65%));
+    --gradient-card: linear-gradient(135deg, hsl(230, 20%, 12%), hsl(230, 20%, 14%));
+    --gradient-footer: linear-gradient(135deg, hsl(260, 85%, 65%), hsl(290, 75%, 68%), hsl(340, 90%, 68%));
+    
+    --shadow-card: 0 2px 8px -2px hsl(0, 0%, 0%, 0.3);
+    --shadow-hover: 0 8px 24px -4px hsl(0, 0%, 0%, 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
